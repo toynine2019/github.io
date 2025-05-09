@@ -3,94 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>빈 웹사이트</title>
+    <title>내 웹사이트</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        
-        .container {
-            width: 80%;
-            max-width: 1200px;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2rem;
         }
-        
-        header {
-            background-color: #fff;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
         }
-        
-        nav ul {
-            display: flex;
+        .board-links {
             list-style: none;
+            padding: 0;
         }
-        
-        nav ul li {
-            margin-right: 1rem;
+        .board-links li {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
-        
-        nav ul li a {
+        .board-links a {
+            display: block;
+            padding: 15px;
             text-decoration: none;
             color: #333;
-            padding: 0.5rem;
+            transition: all 0.3s;
         }
-        
-        main {
-            min-height: 70vh;
-            padding: 2rem 0;
-        }
-        
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+        .board-links a:hover {
+            background-color: #f5f5f5;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">홈</a></li>
-                    <li><a href="#">소개</a></li>
-                    <li><a href="#">서비스</a></li>
-                    <li><a href="#">연락처</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <h1>내 웹사이트 게시판 모음</h1>
     
-    <main>
-        <div class="container">
-            <!-- 여기에 콘텐츠를 추가하세요 -->
-            <h1>웹사이트에 오신 것을 환영합니다</h1>
-            <p>이곳에 내용을 채워넣으세요.</p>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 빈 웹사이트. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // 자바스크립트 코드를 여기에 추가하세요
-        console.log('웹사이트가 로드되었습니다.');
-    </script>
+    <ul class="board-links">
+        <li><a href="first.html">기본 게시판</a></li>
+        <li><a href="board2.html">모던 게시판</a></li>
+        <li><a href="board3.html">카드형 게시판</a></li>
+        <li><a href="board4.html">다크 모드 게시판</a></li>
+        <li><a href="board5.html">모바일 친화적 게시판</a></li>
+    </ul>
 </body>
 </html>
